@@ -1,0 +1,12 @@
+{
+  "name": "collectd-influxdb-proxy",
+  "version": "0.0.1",
+  "author": "Bertrand Paquet <bertrand.paquet@gmail.com>",
+  "main": "./proxy.js",
+  "devDependencies": {
+    "supervisor": "0.5.0"
+  },
+  "dependencies": {
+    "optimist": "0.3.4"
+  }
+}
