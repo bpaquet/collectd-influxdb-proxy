@@ -52,7 +52,7 @@ if (!argv.influxdb_password) {
   usage();
 }
 
-argv.influxdb_path = '/db/' + argv.influxdb_db + '/series?u=' + argv.influxdb_user + '&p=' + argv.influxdb_password;
+argv.influxdb_path = '/db/' + argv.influxdb_db + '/series?u=' + argv.influxdb_user + '&p=' + argv.influxdb_password + '&time_precision=s';
 console.log('Influx db config');
 console.log('Host :', argv.influxdb_host, ':', argv.influxdb_port);
 console.log('Path :', argv.influxdb_path);
