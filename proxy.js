@@ -78,7 +78,7 @@ var server = http.createServer(function(req, res) {
         name = name + '.' + x.type_instance;
       }
       for(var z in x.dstypes) {
-        if (x.dstypes[z] == 'counter' || x.dstypes[z] == 'gauge') {
+        if (x.dstypes[z] == 'counter' || x.dstypes[z] == 'gauge' || x.dstypes[z] == 'derive') {
           var n = name + '.' + x.dsnames[z];
           if (argv.verbose) {
             console.log('Push metric', n);
