@@ -35,7 +35,7 @@ if (!argv.influxdb_host) {
 }
 
 if (!argv.influxdb_port) {
-  argv.influxdb_port = '8086';
+  argv.influxdb_port = 8086;
 }
 
 if (!argv.influxdb_db) {
