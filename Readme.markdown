@@ -35,4 +35,4 @@ Other collectd-influxdb-proxy :
       --verbose : display metric name pushed into influxdb
       --help : this help
 
-Note : only ``gauge`` and ``counter`` metrics from Collectd are processed, and are transmitted as is to Influxdb.
+Note : only ``derive``, ``gauge``, and ``counter`` metrics from Collectd are processed, and are transmitted as is to Influxdb.
