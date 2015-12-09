@@ -7,9 +7,10 @@ On collectd side, add following plugin
 
     LoadPlugin "write_http"
     <Plugin "write_http">
-      <URL "http://10.0.0.130:8079">
+      <Node "example">
+        URL "http://10.0.0.130:8079"
         Format "JSON"
-      </URL>
+      </Node>
     </Plugin>
 
 Where 10.0.0.130:8079 is the listening point of your collectd-influxdb proxy.
@@ -34,4 +35,4 @@ Other collectd-influxdb-proxy :
       --verbose : display metric name pushed into influxdb
       --help : this help
 
-Note : only ``gauge`` and ``counter`` metrics from Collectd are processed, and are transmitted as is to Influxdb.
+Note : only ``derive``, ``gauge``, and ``counter`` metrics from Collectd are processed, and are transmitted as is to Influxdb.
